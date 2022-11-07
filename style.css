@@ -90,6 +90,18 @@ form input[type="submit"] {
     padding-left: 35px;
 }
 
+#wrapper {
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+}
+
+.pair {
+    margin-right: 75px;
+    margin-bottom: 35px;
+}
+
 #form-container h2 {
     margin-top: 15px;
     margin-bottom: 25px;
