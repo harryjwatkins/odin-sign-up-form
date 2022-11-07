@@ -3,6 +3,11 @@
     src: url("Norse-Bold.otf");
 }
 
+@font-face {
+    font-family: "ArabotoNormal";
+    src: url("Araboto_Font_Family_\(Fontmirror\)/ArabotoNormal.ttf");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -17,14 +22,12 @@ body {
     flex-direction: column;
     width: 35%;
     height: 100vh;
-    border: 1px solid red;
     background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
     background-size: contain;
 }
 
 #title-container {
     display: flex;
-    border: 1px solid red;
     height: 150px;
     justify-content: center;
     align-items: center;
@@ -53,22 +56,21 @@ h1 {
 #right-container {
     width: 65%;
     height: 100vh;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     background-color: #f9fafc;
+    font-family: "ArabotoNormal";
 }
 
 #textbox-one {
-    margin-top: 160px;
+    margin-top: 130px;
     margin-left: 35px;
     width: 65%;
-    border: 1px solid red;
 }
 
 #textbox-two {
-    margin-top: 30px;
+    margin-top: 25px;
     margin-left: 35px;
 }
 
@@ -77,30 +79,42 @@ form {
 }
 
 #form-container {
-    border: 1px solid red;
-    margin-top: 70px;
+    margin-top: 60px;
     width: calc(100%-35px);
-    height: 300px;
+    height: 335px;
     background-color: #ffffff;
     padding-left: 35px;
+    box-shadow: 0 4px 10px -2px darkgray;
 }
 
 #wrapper {
-    border: 1px solid red;
     display: flex;
     flex-wrap: wrap;
     width: 700px;
 }
 
+input {
+    border: 1px solid #E5E7EB;
+    height: 30px;
+    width: 270px;
+    border-radius: 5px;
+}
+
 .pair {
     margin-right: 75px;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.pair label {
+    letter-spacing: 1px;
 }
 
 #form-container h2 {
     margin-top: 15px;
-    margin-bottom: 25px;
-    font-size: 28px;
+    margin-bottom: 22px;
+    font-size: 24px;
+    padding-top: 20px;
 }
 
 input[type="submit"] {
@@ -109,13 +123,15 @@ input[type="submit"] {
     margin-bottom: 35px;
     background-color: #596D48;
     color: white;
-    width: 200px;
+    width: 250px;
     height: 50px;
-    border-radius: 12px;
+    border-radius: 10px;
     font-weight: bold;
-    font-size: 16px
+    font-size: 18px;
+    border: 0px;
 }
 
 #right-container p {
     margin-left: 35px;
+    font-size: 19px;
 }
